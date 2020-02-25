@@ -6,8 +6,10 @@
     <title>Document</title>
   </head>
   <body>
-    <p>函数可以存放在变量中</p>
-    <p id="demo"></p>
+    <!-- <p>函数可以存放在变量中</p>
+    <p id="demo"></p> -->
+
+    <!-- <div id="demo"></div> -->
   </body>
   <script>
     // var x = '你好JavaScript'
@@ -250,10 +252,81 @@
 
     //六数组 创建数组
     // var myCars = new Array('saab', 'volvo', 'bmw')
-    var myCars = new Array()
-    myCars[0] = 'sabb'
-    myCars[1] = 'volvo'
-    myCars[2] = 'bmw'
-    console.log(myCars[2])
+
+    // var myCars = new Array()
+    // myCars[0] = 'sabb'
+    // myCars[1] = 'volvo'
+    // myCars[2] = 'bmw'
+    // console.log(myCars[2])
+
+    //push（）方法
+    // var a = []
+    // a[0] = 'zero'
+    // a[1] = 'one'
+    // a.push('two')
+    //遍历输出数组
+    // for (var i = 0; i < a.length; i++) {
+    //   console.log(a[i])
+    // }
+    //forEach遍历
+    // a.forEach(function(item) {
+    //   console.log(item)
+    // })
+    //for-in
+    // for (var key in a) {
+    //   console.log(a[key])
+    // }
+
+    //pop()方法:抛出数组的最后一个值
+    // var oneDown = [1, 4, 6].pop()
+    // console.log(oneDown)
+    //shift()方法：抛出数组第一个值
+    // var oneDown = [1, 4, 6].shift()
+    // console.log(oneDown)
+
+    //unshift()方法:在数组的头部添加元素
+    // var a = ['zero']
+    // a.unshift('one')
+    // a.forEach(function(item) {
+    //   console.log(item)
+    // })
+
+    //concat()方法 允许连接数组并创建一个全新的数组
+    // var c1 = ['HTML', 'CSS']
+    // var c2 = ['JS', 'Python']
+    // var courses = c1.concat(c2)
+    // courses.forEach(function(item) {
+    //   console.log(item)
+    // })
+
+    //forEach() 调用数组的每个元素，并将元素传递给回调函数
+    //对于空数组不执行回调函数
+    // var numbers = [64, 45, 72, 11, 49]
+    // function myFuncation(item, index) {
+    //   var demo = document.getElementById('demo')
+    //   //item 传递的是数组的值，index 传递的事索引
+    //   demo.innerHTML = demo.innerHTML + 'index[' + index + ']:' + item + '<br>'
+    // }
+    // numbers.forEach(myFuncation)
+
+    //indexOf()方法 返回数组中某个指定的元素位置 ,没有找到返回-1
+    // var fruits = ['香蕉', '橙子', '苹果', '甜瓜', '苹果']
+    // var a = fruits.indexOf('苹果')
+    // var b = fruits.indexOf('火龙果')
+    // console.log(a + ',' + b)
+
+    //slice（）方法从已有的数组中返回选定的元素
+    // var fruits = ['香蕉', '橙子', '苹果', '甜瓜', '苹果']
+    // var citrus = fruits.slice(1, 4)
+    // citrus.forEach(function(item) {
+    //   console.log(item)
+    // })
+
+    //6.3关联数组  person被视为一个对象而不是一个数组
+    //name和age 称为person对象的属性
+    var person = []
+    person['name'] = 'Loen'
+    person['age'] = 28
+    console.log(person['age'])
   </script>
 </html>
