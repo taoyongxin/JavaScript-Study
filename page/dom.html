@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <div id="container">
+      <div id="box"></div>
+    </div> -->
+    <input type="text" id="clock" size="35" />
+  </body>
+  <style>
+    #container {
+      width: 600px;
+      height: 400px;
+      background: rgb(170, 190, 170);
+      position: relative;
+    }
+    #box {
+      width: 60px;
+      height: 60px;
+      background: rgb(211, 144, 144);
+      position: absolute;
+    }
+  </style>
+  <script>
+    // var t = setInterval(move, 500)
+
+    // var pos = 0
+    // var box = document.getElementById('box')
+    // function move() {
+    //   pos += 1
+    //   box.style.left = pos + 'px'
+    // }
+    var int = self.setInterval('clock()', 50)
+    function clock() {
+      var t = new Date()
+      document.getElementById('clock').value = t
+    }
+  </script>
+</html>
