@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>操作元素之修改元素属性</title>
+    <style>
+      img {
+        width: 300px;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="hmbb">海绵宝宝</button>
+    <button id="pdx">派大星</button>
+    <img src="../image/haimianbaobao.png" alt="" title="海绵宝宝" />
+
+    <script>
+      //修改元素属性 src
+      //1.获取元素
+      var hmbb = document.getElementById('hmbb')
+      var pdx = document.getElementById('pdx')
+      var img = document.querySelector('img')
+      //2.注册时间 处理程序
+      hmbb.onclick = function() {
+        img.src = '../image/haimianbaobao.png'
+        img.title = '海绵宝宝'
+      }
+      pdx.onclick = function() {
+        img.src = '../image/paidaxing.png'
+        img.title = '派大星'
+      }
+    </script>
+  </body>
+</html>
