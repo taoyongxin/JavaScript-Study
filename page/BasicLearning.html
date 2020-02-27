@@ -9,7 +9,10 @@
     <!-- <p>函数可以存放在变量中</p>
     <p id="demo"></p> -->
 
-    <div id="demo"></div>
+    <div id="demo">
+      <p id="p1">这是一个段落</p>
+      <p id="p2">这是另外一个段落</p>
+    </div>
 
     <!-- <input type="button" value="Open Window" onclick="open_win()" /> -->
 
@@ -495,13 +498,40 @@
     // document.write(house + '<br>')
 
     //每秒打印一次当前浏览器的时间
-    function printTime() {
-      var d = new Date()
-      var hours = d.getHours()
-      var mins = d.getMinutes()
-      var secs = d.getSeconds()
-      document.body.innerHTML = hours + ':' + mins + ':' + secs
-    }
-    setInterval(printTime, 1000)
+    // function printTime() {
+    //   var d = new Date()
+    //   var hours = d.getHours()
+    //   var mins = d.getMinutes()
+    //   var secs = d.getSeconds()
+    //   document.body.innerHTML = hours + ':' + mins + ':' + secs
+    // }
+    // setInterval(printTime, 1000)
+
+    //创建一个新的段落
+    // var p = document.createElement('p')
+    // var node = document.createTextNode('一些新的文本')
+    // //添加文本到段落
+    // p.appendChild(node)
+
+    // var div = document.getElementById('demo')
+    // //将段落添加到div中
+    // div.appendChild(p)
+
+    //移除元素
+    //要删除HTML元素 必须选择元素的父项并使用removeChil(node)方法
+    // var parent = document.getElementById('demo')
+    // var child = document.getElementById('p1')
+    // // parent.removeChile(child)
+    // chil.parentNode.removeChild(child)
+
+    //替换元素
+    //要替换HTML元素 使用element.replaceChild（newNode.oldNod）方法
+    // var p = document.createElement('p')
+    // var node = document.createTextNode('这是新的文本')
+    // p.appendChild(node)
+
+    // var parent = document.getElementById('demo')
+    // var child = document.getElementById('p1')
+    // parent.replaceChild(p, child)
   </script>
 </html>
